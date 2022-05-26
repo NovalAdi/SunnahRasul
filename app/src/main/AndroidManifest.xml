@@ -11,9 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SunnahRasul">
         <activity
+            android:name=".PuasaSholatActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
             android:name=".ListItemActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

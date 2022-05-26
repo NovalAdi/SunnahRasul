@@ -3,6 +3,7 @@ package com.vall.sunnahrasul.network
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.create
 
 object RetrofitService {
 
@@ -14,6 +15,10 @@ object RetrofitService {
         .addConverterFactory(GsonConverterFactory.create())
         .client(client)
         .build()
+
+    fun <T> buildService(service: Class<T>): T {
+        return retrofit.create(service)
+    }
 
     fun getServiceKategori() = retrofit.create(RetrofitInterface::class.java)
 }

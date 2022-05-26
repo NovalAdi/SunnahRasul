@@ -5,10 +5,13 @@ import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-data class ResponseSunnah(
+data class Response(
 
 	@field:SerializedName("Kategori")
-	val kategori: List<KategoriItem?>? = null
+	val kategori: List<KategoriItem>? = null,
+
+	@field:SerializedName("puasa_sholat")
+	val puasaSholat: List<PuasaSholatItem>? = null
 ) : Parcelable
 
 @Parcelize
@@ -31,11 +34,21 @@ data class DataItem(
 data class KategoriItem(
 
 	@field:SerializedName("data")
-	val  data: List<DataItem>? = null,
+	val data: List<DataItem>? = null,
 
 	@field:SerializedName("title")
 	val title: String? = null,
 
 	@field:SerializedName("gambar")
 	val gambar: String? = null
+) : Parcelable
+
+@Parcelize
+data class PuasaSholatItem(
+
+	@field:SerializedName("data")
+	val data: List<DataItem>? = null,
+
+	@field:SerializedName("title")
+	val title: String? = null
 ) : Parcelable

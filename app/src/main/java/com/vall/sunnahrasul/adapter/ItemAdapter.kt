@@ -7,7 +7,7 @@ import com.vall.sunnahrasul.databinding.ItemDataRecyclerBinding
 import com.vall.sunnahrasul.model.DataItem
 import com.vall.sunnahrasul.model.KategoriItem
 
-class ItemAdapter(private val dataItem: List<DataItem>): RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
+class ItemAdapter(private val dataItem : List<DataItem>): RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
 
     class ViewHolder(var binding: ItemDataRecyclerBinding): RecyclerView.ViewHolder(binding.root)
 

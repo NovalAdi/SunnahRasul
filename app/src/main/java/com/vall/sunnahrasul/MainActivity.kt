@@ -1,13 +1,12 @@
 package com.vall.sunnahrasul
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.vall.sunnahrasul.adapter.KategoriAdapter
 import com.vall.sunnahrasul.databinding.ActivityMainBinding
-import com.vall.sunnahrasul.model.DataItem
 import com.vall.sunnahrasul.model.KategoriItem
-import com.vall.sunnahrasul.model.ResponseSunnah
 import com.vall.sunnahrasul.network.RetrofitService
 import retrofit2.Call
 import retrofit2.Callback
@@ -22,6 +21,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.btnToPuasaSholat.setOnClickListener {
+            startActivity(Intent(this, PuasaSholatActivity::class.java))
+        }
 
         binding.recyclerviewKategori.apply {
             setHasFixedSize(true)
