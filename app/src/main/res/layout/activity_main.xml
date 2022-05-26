@@ -13,20 +13,6 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="24dp"
-            android:fontFamily="@font/poppins_regular"
-            android:text="Assalamualaikum,"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:textStyle="normal"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -43,20 +29,22 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
             android:fontFamily="@font/poppins_regular"
-            android:text="Noval Adi"
+            android:text="Sunnah Rasul"
             android:textColor="@color/white"
-            android:textSize="30sp"
+            android:textSize="32sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
             android:backgroundTint="#3A6D93"
             app:cardCornerRadius="20dp"
@@ -87,7 +75,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
                     android:fontFamily="@font/poppins_regular"
-                    android:text="Hiasi harimu dengan sunnah sunnah Rasul"
+                    android:text="Hiasi harimu dengan sunnah sunnah rasul"
                     android:textColor="@color/white"
                     android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView2"
@@ -124,7 +112,7 @@
                     android:fontFamily="@font/poppins_regular"
                     android:text="Sholat dan Puasa Sunnah"
                     android:textColor="@color/white"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/btn_to_puasa_sholat"
                     app:layout_constraintStart_toStartOf="parent"
