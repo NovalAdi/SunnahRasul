@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnToPuasaSholat.setOnClickListener {
+        binding.btnPuasaSholat.setOnClickListener {
             startActivity(Intent(this, PuasaSholatActivity::class.java))
         }
 
