@@ -16,13 +16,11 @@ class PuasaSholatActivity : AppCompatActivity() {
         binding = ActivityPuasaSholatBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val adapters = TabAdapter(supportFragmentManager, lifecycle)
-
         binding.imageView.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
         }
 
-        binding.viewPager2.adapter = adapters
+        binding.viewPager2.adapter = TabAdapter(supportFragmentManager, lifecycle)
         TabLayoutMediator(binding.tabLayout, binding.viewPager2) {tab, position ->
             when (position) {
                 0 -> {
